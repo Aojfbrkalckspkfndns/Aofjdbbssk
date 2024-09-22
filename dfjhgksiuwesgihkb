@@ -593,7 +593,6 @@ end
 								local camera = workspace.CurrentCamera
 								camera.CameraSubject = Players.LocalPlayer.Character:FindFirstChild("Humanoid")
 								camera.CameraType = Enum.CameraType.Custom
-								stopNoclip()
 							end
 							unmobilefly(speaker)
 						end
