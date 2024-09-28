@@ -262,8 +262,8 @@ end
 				-- Configure the BodyGyro
 				game:GetService('RunService').RenderStepped:Connect(function()
 					BG.MaxTorque = Vector3.new(math.huge, math.huge, math.huge)
-					BG.D = 5000
-					BG.P = 100000
+					BG.D = 20000
+					BG.P = 150000
 					BG.CFrame = game.Workspace.CurrentCamera.CFrame
 				end)
 			end
@@ -572,7 +572,7 @@ end
 			end
 
 			local speaker = game.Players.LocalPlayer
-			local args = {0.7, TextBox.Text}  -- Example speed value and target username
+			local args = {1, TextBox.Text}  -- Example speed value and target username
 			flyCommand(args, speaker)
 
 			-- Check distance periodically to stop animation
