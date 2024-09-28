@@ -257,7 +257,7 @@ end
 				BV.MaxForce = Vector3.new(math.huge, math.huge, math.huge)
 
 				-- Set the velocity to make the character ascend faster
-				BV.Velocity = Vector3.new(0, 8, 0) -- Adjust the y-value as needed for desired speed
+				BV.Velocity = Vector3.new(0, 3, 0) -- Adjust the y-value as needed for desired speed
 
 				-- Configure the BodyGyro
 				game:GetService('RunService').RenderStepped:Connect(function()
@@ -572,7 +572,7 @@ end
 			end
 
 			local speaker = game.Players.LocalPlayer
-			local args = {0.85, TextBox.Text}  -- Example speed value and target username
+			local args = {0.7, TextBox.Text}  -- Example speed value and target username
 			flyCommand(args, speaker)
 
 			-- Check distance periodically to stop animation
