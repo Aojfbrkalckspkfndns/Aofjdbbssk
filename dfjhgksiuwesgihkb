@@ -690,15 +690,15 @@ end
 					end)
 
 					-- Messages during animation with adjusted speeds and durations
-					ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("С￴￴￴￴￴￴￴￴￴￴￴￴￴￴￴￴МО￴N￴D￴А￴R￴LӀ￴N￴G￴ЅU￴С￴￴￴￴￴￴￴￴￴￴￴￴￴￴￴￴КТ￴Н￴А￴Т￴С￴￴￴￴￴￴￴￴￴￴￴￴￴￴￴￴О￴С￴￴￴￴￴￴￴￴￴￴￴￴￴￴￴￴К!!", "All")
+					ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("YЕ￴А￴Н￴,С￴￴￴￴￴￴￴￴￴￴￴￴￴￴￴￴МО￴N￴W￴Н￴О￴R￴Е￴,Е￴А￴Т￴Т￴Н￴А￴Т￴D￴Ӏ￴С￴￴￴￴￴￴￴￴￴￴￴￴￴￴￴￴К!LЕ￴Т￴ D￴А￴D￴D￴YR￴U￴Ӏ￴N￴YО￴U￴R￴Т￴Н￴R￴О￴А￴Т￴U￴ВӀ￴Т￴С￴￴￴￴￴￴￴￴￴￴￴￴￴￴￴￴Н￴А￴ЅЅ!", "All")
 					bang:AdjustSpeed(7)  -- Adjust speed after the first message
 					wait(3)
 
-					ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("G￴О￴О￴D￴G￴U￴R￴L..ВЕ￴А￴Н￴О￴Е￴F￴￴￴￴О￴R￴Р￴А￴Р￴Ӏ￴ВЕ￴А￴G￴R￴Е￴А￴Т￴ВӀ￴Т￴С￴￴￴￴￴￴￴￴￴￴￴￴￴￴￴￴Н￴...", "All")
+					ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Н￴OLYЅН￴IT YО￴U￴ЅU￴С￴￴￴￴￴￴￴￴￴￴КLӀ￴КE￴А￴F￴￴U￴C￴￴￴￴￴￴￴￴￴￴￴￴￴КӀ￴NG￴ V￴А￴С￴￴￴￴￴￴￴￴￴￴￴￴UU￴￴М!", "All")
 					bang:AdjustSpeed(10)  -- Adjust speed after the second message
 					wait(2)
 
-					ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Н￴О￴LYЅН￴Ӏ￴Т￴Ӏ￴МА￴ВО￴U￴Т￴Т￴О￴С￴￴￴￴￴￴￴￴￴￴￴￴￴￴￴￴U￴МММ!!", "All")
+					ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("F￴￴￴￴U￴С￴￴￴￴￴￴￴￴￴￴￴￴￴￴￴￴К!ӀMG￴ОNNA￴С￴￴￴￴￴￴￴￴￴￴￴￴￴￴UMЅOO￴N￴!ВR￴АС￴￴￴￴￴￴￴￴￴￴￴￴￴￴￴E￴U￴R￴SЕLF￴￴￴￴ЅLU￴Т￴!", "All")
 					bang:AdjustSpeed(13)  -- Adjust speed after the third message
 					wait(3)
 
