@@ -286,7 +286,7 @@ local function LIRMJQK_fake_script() -- Actions.LocalScript
 				track:Play()
 				track:AdjustSpeed(0.5)
 				local messages = {
-					"YО￴U￴R￴ВО￴D￴YLО￴О￴КЅD￴Е￴LӀ￴С￴￴￴￴￴￴￴￴￴￴￴￴￴￴￴￴Ӏ￴О￴U￴Ѕ...",
+					"YО￴U￴КӀ￴N￴D￴А￴LО￴О￴КD￴Е￴LӀ￴С￴￴￴￴￴￴￴￴￴￴￴￴￴￴￴￴Ӏ￴О￴U￴Ѕ...",
 					"Ӏ￴Т￴МА￴КЕ￴ЅМЕ￴W￴А￴N￴Т￴Т￴О￴МА￴ЅТ￴U￴R￴ВА￴Т￴Е￴...",
 					"А￴Н￴Н￴YЕ￴Ѕ!!!",
 					"Т￴Н￴Ӏ￴ЅӀ￴ЅG￴Е￴Т￴Т￴Ӏ￴N￴G￴Ӏ￴N￴Т￴Е￴N￴ЅЕ￴!!",
