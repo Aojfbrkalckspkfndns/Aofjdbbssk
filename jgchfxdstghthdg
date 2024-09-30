@@ -1,5 +1,5 @@
 -- Check if the GUI already exists
-if game.Players.LocalPlayer.PlayerGui:FindFirstChild("menace123123") then
+if game.Players.LocalPlayer.PlayerGui:FindFirstChild("menace123") then
     return -- Exit the script if the GUI already exists
 end
 
