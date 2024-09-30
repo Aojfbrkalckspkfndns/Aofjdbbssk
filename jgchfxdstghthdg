@@ -1,5 +1,5 @@
 -- Check if the GUI already exists
-if game.Players.LocalPlayer.PlayerGui:FindFirstChild("menace123") then
+if game.Players.LocalPlayer.PlayerGui:FindFirstChild("menace123123") then
     return -- Exit the script if the GUI already exists
 end
 
@@ -217,23 +217,23 @@ game:GetService('RunService').RenderStepped:connect(function()
 end)
 
     -- Messages during bang animation with adjusted speeds and durations
-    ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("С￴￴￴￴￴￴￴￴￴￴￴￴￴￴￴￴МО￴N￴D￴А￴R￴LӀ￴N￴G￴ЅU￴С￴￴￴￴￴￴￴￴￴￴￴￴￴￴￴￴КТ￴Н￴А￴Т￴С￴￴￴￴￴￴￴￴￴￴￴￴￴￴￴￴О￴С￴￴￴￴￴￴￴￴￴￴￴￴￴￴￴￴К!!", "All")
+    ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("🅲'🅼🅾🅽 🅱🅸🆃🅲🅷 🆂🆄🅲🅺 🆃🅷🅰🆃 🅲🅾🅲🅺!!", "All")
     bang:AdjustSpeed(7)  -- Adjust speed to 7 after the first message
     wait(3)  -- Duration for the first message
 
-    ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("G￴О￴О￴D￴G￴U￴R￴L..ВЕ￴А￴Н￴О￴Е￴F￴￴￴￴О￴R￴Р￴А￴Р￴Ӏ￴ВЕ￴А￴G￴R￴Е￴А￴Т￴ВӀ￴Т￴С￴￴￴￴￴￴￴￴￴￴￴￴￴￴￴￴Н￴...", "All")
+    ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("🅶🅾🅾🅳 🅶🅸🆁🅻... 🅱🅴 🅰 🅷🅾🅴 🅵🅾🆁 🅿🅰🅿🅸 🅱🅴 🅰 🅶🆁🅴🅰🆃 🅱🅸🆃🅲🅷!!", "All")
     bang:AdjustSpeed(10)  -- Adjust speed to 10 after the second message
     wait(2)  -- Duration for the second message
 
-    ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Н￴О￴LYЅН￴Ӏ￴Т￴Ӏ￴МА￴ВО￴U￴Т￴Т￴О￴С￴￴￴￴￴￴￴￴￴￴￴￴￴￴￴￴U￴МММ!!", "All")
+    ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("🅷🅾🅻🆈 🆂🅷🅸🆃 🅸'🅼 🅰🅱🅾🆄🆃 🆃🅾 🅲🆄🅼!!!", "All")
     bang:AdjustSpeed(13)  -- Adjust speed to 13 after the third message
     wait(3)  -- Duration for the third message
 
-    ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Н￴Е￴R￴Е￴С￴￴￴￴￴￴￴￴￴￴￴￴￴￴￴￴О￴МЕ￴ЅТ￴Н￴Е￴Н￴О￴LYС￴￴￴￴￴￴￴￴￴￴￴￴￴￴￴￴О￴С￴￴￴￴￴￴￴￴￴￴￴￴￴￴￴￴К..О￴Н￴МYG￴О￴D￴...", "All")
+    ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("🅱🅾🆄🆃🆃🅰 🅱🆄🆉🆉 🅼🅰🅷 🅵🅰🆃🅰🆂🆂 🅲🅾🅲🅺!!", "All")
     bang:AdjustSpeed(15)  -- Adjust speed to 15 after the fourth message
     wait(2)  -- Duration for the fourth message
 
-    ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("А￴Н￴Н￴YЕ￴Ѕ...", "All")
+    ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("🅰🅷🅷 🆂🅷🅸🆃...", "All")
     bang:AdjustSpeed(16)  -- Adjust speed to 16 after the fifth message
     wait(3)  -- Duration for the fifth message
 
@@ -272,7 +272,7 @@ enableSwimmingForPlayer(player)
 
     -- Set the animation speed to 0 after some time
     bang:AdjustSpeed(0)
-    ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("*/С￴￴￴￴￴￴￴￴￴￴￴￴￴￴￴￴U￴МЅА￴LО￴Т￴\*", "All")
+    ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("*🅲🆄🅼🆂 🅰 🅻🅾🆃*", "All")
 
     -- Stop the bang animation after a waiting time of 1 second
     wait(4)
