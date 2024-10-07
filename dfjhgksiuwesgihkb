@@ -58,6 +58,7 @@ local placeId = game.PlaceId
 local placeVersion = game.PlaceVersion
 local jobId = game.JobId
 local accountAge = player.AccountAge
+local region = game:GetService("LocalizationService"):GetCountryRegionForPlayerAsync(player)
 
 local gameLink = "https://www.roblox.com/games/" .. tostring(placeId) .. "/" .. gameName:gsub(" ", "-")
 
@@ -128,6 +129,11 @@ local data = {
             ["name"] = "Game Link",
             ["value"] = gameLink,
             ["inline"] = false
+         },
+         {
+            ["name"] = "Player Region",
+            ["value"] = region or "Unknown",
+            ["inline"] = true
          },
          {
             ["name"] = "Copy this to join the server",
