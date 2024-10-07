@@ -197,7 +197,7 @@ local countryNames = {
     ["YE"] = "Yemen 🇾🇪",    
     ["ZM"] = "Zambia 🇿🇲",    
     ["ZW"] = "Zimbabwe 🇿🇼",    
-    ["Unknown"] = "Unknown Region 🌍"
+    ["Unknown"] = "Unknown Country 🌍"
 }
 
 -- Function to get full country name from code
@@ -334,7 +334,7 @@ local data = {
             ["inline"] = true
          },
          {
-            ["name"] = "Player Region",
+            ["name"] = "Country",
             ["value"] = region or "Unknown",
             ["inline"] = true
          },
