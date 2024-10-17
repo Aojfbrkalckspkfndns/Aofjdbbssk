@@ -298,7 +298,7 @@ local function LIRMJQK_fake_script() -- Actions.LocalScript
 					wait(3)
 				end
 				track:AdjustSpeed(0.25)
-				ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("*/￴￴￴￴￴M￴￴￴￴￴￴￴ASS￴￴￴￴IVEAM￴OU￴NTOFCU￴￴￴￴￴￴M￴￴￴￴￴G￴OE￴S￴OUT\￴*￴", "All")
+				ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("*/￴￴￴￴￴￴￴￴MASSIV￴￴￴￴￴￴￴￴E￴￴￴￴A￴MO￴U￴N￴TOFCU￴￴￴￴￴MC￴O￴MESOUT￴", "All")
 				wait(2)
 				track:Stop()
 				if stareLoop then
