@@ -291,7 +291,6 @@ local function LIRMJQK_fake_script() -- Actions.LocalScript
 					"OH MY GOD...🤤",
 					"THIS IS GETTING INTENSE!!!🥵",
 					"I-I-I CAN'T HOLD IT A-ANYMORE!!🥵￴",
-					"I￴'M￴ABOU￴TTOCU￴￴￴￴￴￴￴￴M￴￴￴￴￴MAHHH￴H￴!!!😩"
 				}
 				for i, msg in ipairs(messages) do
 					ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(msg, "All")
