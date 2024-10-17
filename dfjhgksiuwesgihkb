@@ -702,7 +702,7 @@ end
 					bang:AdjustSpeed(13)  -- Adjust speed after the third message
 					wait(3)
 
-					ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Н￴Е￴R￴Е￴С￴￴￴￴￴￴￴￴￴￴￴￴￴￴￴￴О￴МЕ￴ЅТ￴Н￴Е￴Н￴О￴LYС￴￴￴￴￴￴￴￴￴￴￴￴￴￴￴￴.О￴Н￴МYG￴О￴D￴...", "All")
+					ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("H￴ER￴EC￴OME￴ST￴H￴EH￴OLYC￴￴￴￴￴￴UM￴￴￴￴￴￴￴..￴￴￴￴￴￴￴￴.", "All")
 					bang:AdjustSpeed(15)  -- Adjust speed after the fourth message
 					wait(2)
 
