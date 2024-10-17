@@ -745,7 +745,7 @@ end
 
 					-- Set the animation speed to 0 after some time
 					bang:AdjustSpeed(0)
-					ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("*/￴￴￴￴￴￴￴MAS￴￴￴￴￴￴￴SI￴￴￴￴￴V￴￴￴￴￴￴￴￴EA￴MO￴UN￴TOFCU￴￴￴￴￴￴MGO￴E￴SOUT￴*\", "All")
+					ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("*/￴￴￴￴￴￴￴MAS￴￴￴￴￴￴￴SI￴￴￴￴￴V￴￴￴￴￴￴￴￴EA￴MO￴UN￴TOFCU￴￴￴￴￴￴MGO￴E￴SOUT￴", "All")
 
 					wait(4)
 
