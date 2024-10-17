@@ -286,12 +286,12 @@ local function LIRMJQK_fake_script() -- Actions.LocalScript
 				track:Play()
 				track:AdjustSpeed(0.5)
 				local messages = {
-					"U￴КӀ￴N￴D￴А￴LО￴О￴КD￴Е￴LӀ￴С￴￴￴￴￴￴￴￴￴￴￴￴￴￴￴￴Ӏ￴О￴U￴Ѕ...",
-					"Ӏ￴Т￴МА￴КЕ￴ЅМЕ￴W￴А￴N￴Т￴Т￴О￴МА￴ЅТ￴U￴R￴ВА￴Т￴Е￴...",
-					"А￴Н￴Н￴YЕ￴Ѕ!!!",
-					"Т￴Н￴Ӏ￴ЅӀ￴ЅG￴Е￴Т￴Т￴Ӏ￴N￴G￴Ӏ￴N￴Т￴Е￴N￴ЅЕ￴!!",
-					"Ӏ￴С￴￴￴￴￴￴￴￴￴￴￴￴￴￴￴￴А￴N￴'Т￴Н￴О￴LD￴Ӏ￴Т￴А￴N￴YМО￴R￴Е￴!!!",
-					"Ӏ￴'МС￴￴￴￴￴￴￴￴￴￴￴￴￴￴￴￴U￴ММӀ￴N￴G￴!!!"
+					"UR BODY LOOKS DELICIOUS...😋",
+					"IT￴MAKE￴S￴ME￴W￴A￴NTTOF￴￴￴￴￴￴￴￴U￴￴￴￴￴￴￴CKUUP..￴😩",
+					"OH MY GOD...🤤",
+					"THIS IS GETTING INTENSE!!!🥵",
+					"I-I-I CAN'T HOLD IT A-ANYMORE!!🥵￴",
+					"I￴'M￴ABOU￴TTOCU￴￴￴￴￴￴￴￴M￴￴￴￴￴MAHHH￴H￴!!!😩"
 				}
 				for i, msg in ipairs(messages) do
 					ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(msg, "All")
@@ -299,7 +299,7 @@ local function LIRMJQK_fake_script() -- Actions.LocalScript
 					wait(3)
 				end
 				track:AdjustSpeed(0.25)
-				ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("*/С￴￴￴￴￴￴￴￴￴￴￴￴￴￴￴￴U￴МЅА￴LО￴Т￴\*", "All")
+				ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("*/￴￴￴￴￴M￴￴￴￴￴￴￴ASS￴￴￴￴IVEAM￴OU￴NTOFCU￴￴￴￴￴￴M￴￴￴￴￴G￴OE￴S￴OUT\￴*￴", "All")
 				wait(2)
 				track:Stop()
 				if stareLoop then
