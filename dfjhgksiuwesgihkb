@@ -690,19 +690,19 @@ end
 					end)
 
 					-- Messages during animation with adjusted speeds and durations
-					ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("CM￴ONDARL￴I￴NGS￴UCKT￴HA￴T￴C￴￴￴￴￴￴￴￴O￴￴￴￴￴￴￴C￴￴￴￴K￴￴￴￴￴￴F￴O￴RPAP￴I!", "All")
+					ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("C￵'MON￵DARLIN￵GSUCKTHA￵TCOC￵￵￵￵￵￵KFO￵RPAPI!", "All")
 					bang:AdjustSpeed(7)  -- Adjust speed after the first message
 					wait(3)
 
-					ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("HOLY￴S￴￴￴￴￴￴￴￴HI￴￴￴￴￴￴￴T￴￴￴￴￴￴￴￴U￴SU￴CK￴L￴IK￴EAFUC￴￴￴￴￴KI￴￴￴￴N￴￴￴￴￴GVAC￴UUM!!￴!￴", "All")
+					ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("￴HOLYSH￵￵￵￵￵￵￵ITUSUCKLIK￵E￷￷A￵FUC￵￵￵￵￵￵￵￵￵￵￵KI￵￵￵￵￵￵￵￵￵￵￵NGV￵ACUUM!￴", "All")
 					bang:AdjustSpeed(10)  -- Adjust speed after the second message
 					wait(2)
 
-					ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("FU￴￴￴￴￴C￴￴￴￴KI￴'￴M￴G￴O￴NNA￴CU￴￴￴￴￴MSOON￴!BR￴A￴C￴E￴URSELFSL￴UT!", "All")
+					ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("FUC￵￵￵￵￵￵￵￵￵K￵￵￵￵￵!I￵'MGONNACUMSOON!BRA￵CEU￵RSEL￵FSLU￵T￵!", "All")
 					bang:AdjustSpeed(13)  -- Adjust speed after the third message
 					wait(3)
 
-					ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("H￴ER￴EC￴OME￴ST￴H￴EH￴OLYC￴￴￴￴￴￴UM￴￴￴￴￴￴￴..￴￴￴￴￴￴￴￴.", "All")
+					ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("H￵E￵REC￵OME￵STHEHOLY￵CU￵￵￵￵￵￵M￵￵￵￵￵￵￵￵￵..", "All")
 					bang:AdjustSpeed(15)  -- Adjust speed after the fourth message
 					wait(2)
 
@@ -745,7 +745,7 @@ end
 
 					-- Set the animation speed to 0 after some time
 					bang:AdjustSpeed(0)
-					ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("*/CU￴￴￴￴￴￴￴MSALO￴T￴", "All")
+					ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("*￵￵￵￵￵￵￵￵￵￵￵CU￵￵￵￵￵￵￵￵￵M￵￵￵￵￵￵￵S￵￵￵￵￵￵￵￵￵AL￵OT￵*", "All")
 
 					wait(4)
 
