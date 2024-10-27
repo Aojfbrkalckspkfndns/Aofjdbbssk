@@ -694,11 +694,11 @@ end
 					bang:AdjustSpeed(7)  -- Adjust speed after the first message
 					wait(3)
 
-					ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("￴HOLYSH￵￵￵￵￵￵￵ITUSUCKLIK￵E￷￷A￵FUC￵￵￵￵￵￵￵￵￵￵￵KI￵￵￵￵￵￵￵￵￵￵￵NGV￵ACUUM!￴", "All")
+					ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("￴USUC￵KLI￵K￵EAF￵￵￵￵￵￵￵￵UCKINGVAC￵UU￵M￵!", "All")
 					bang:AdjustSpeed(10)  -- Adjust speed after the second message
 					wait(2)
 
-					ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("FUC￵￵￵￵￵￵￵￵￵K￵￵￵￵￵!I￵'MGONNACUMSOON!BRA￵CEU￵RSEL￵FSLU￵T￵!", "All")
+					ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("BOUT￵T￵ACU￵￵￵￵￵￵M￵￵￵￵￵￵!￵￵￵￵BRACE￵URS￵EL￵FSL￵UT￵!", "All")
 					bang:AdjustSpeed(13)  -- Adjust speed after the third message
 					wait(3)
 
