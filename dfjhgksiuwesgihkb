@@ -694,7 +694,7 @@ end
 					bang:AdjustSpeed(7)  -- Adjust speed after the first message
 					wait(3)
 
-					ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("￴USUC￵KLI￵K￵EAF￵￵￵￵￵￵￵￵UCKINGVAC￵UU￵M￵!", "All")
+					ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("￵S￵U￵CK￵IT￵LIKEAVACUUM!", "All")
 					bang:AdjustSpeed(10)  -- Adjust speed after the second message
 					wait(2)
 
