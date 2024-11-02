@@ -16,9 +16,9 @@ local function sendMessage(message)
     local ReplicatedStorage = game:GetService("ReplicatedStorage")
     
     if TextChatService:FindFirstChild("TextChannels") then
-        TextChatService.TextChannels.RBXGeneral:SendAsync(">\r\n" .. message .. "\r\n")
+        TextChatService.TextChannels.RBXGeneral:SendAsync(message)
     else
-        ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("</>\b" .. message, "All")
+        ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(message, "All")
     end
 end
 
