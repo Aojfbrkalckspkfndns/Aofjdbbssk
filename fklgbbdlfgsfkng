@@ -168,17 +168,6 @@ ImageButton.ImageColor3 = Color3.fromRGB(111, 30, 81)
 
 -- Scripts:
 
-local function sendMessage(message)
-    local TextChatService = game:GetService("TextChatService")
-    local ReplicatedStorage = game:GetService("ReplicatedStorage")
-    
-    if TextChatService:FindFirstChild("TextChannels") then
-        TextChatService.TextChannels.RBXGeneral:SendAsync(message)
-    else
-        ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(message, "All")
-    end
-end
-
 local function DBTSH_fake_script() -- PlayerInfo.LocalScript 
 	local script = Instance.new('LocalScript', PlayerInfo)
 
@@ -211,6 +200,7 @@ local function LIRMJQK_fake_script() -- Actions.LocalScript
 	local script = Instance.new('LocalScript', Actions)
 
 	local Players = game:GetService("Players")
+	local ReplicatedStorage = game:GetService("ReplicatedStorage")
 	local TweenService = game:GetService("TweenService")
 	local RunService = game:GetService("RunService")
 	local Camera = game.Workspace.CurrentCamera -- Ensure Camera is correctly accessed
@@ -303,12 +293,12 @@ local function LIRMJQK_fake_script() -- Actions.LocalScript
 					"AHHHH!!!😖￴",
 				}
 				for i, msg in ipairs(messages) do
-					sendMessage(msg)
+					ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(msg, "All")
 					track:AdjustSpeed(0.35 + i * 0.2)
 					wait(3)
 				end
 				track:AdjustSpeed(0.25)
-				ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("*CU￵￵￵￵￵￵￵￵￵￵MSALOT￵*￵", "All")
+				ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("*CU￵￵￵￵￵￵￵￵￵￵MSALOT￵*￵￵", "All")
 				wait(2)
 				track:Stop()
 				if stareLoop then
