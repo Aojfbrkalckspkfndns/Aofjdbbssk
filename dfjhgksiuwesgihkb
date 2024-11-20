@@ -680,23 +680,23 @@ end
 					end)
 
 					-- Messages during animation with adjusted speeds and durations
-					sendMessage("1")
+					sendMessage("C󠀀󠀀M󠀀󠀀ON󠀀󠀀DARLIN󠀀GS󠀀UCKTHATC󠀀󠀀O󠀀󠀀󠀀C󠀀󠀀K󠀀󠀀󠀀!󠀀󠀀")
 					bang:AdjustSpeed(7)  -- Adjust speed after the first message
 					wait(3)
 
-					sendMessage("2")
+					sendMessage("BEAH󠀀󠀀OEF󠀀ORP󠀀󠀀A󠀀P󠀀󠀀I󠀀󠀀,BEA󠀀󠀀GR󠀀󠀀EA󠀀T󠀀󠀀B󠀀󠀀I󠀀󠀀󠀀T󠀀󠀀󠀀C󠀀󠀀󠀀H󠀀󠀀󠀀!󠀀󠀀󠀀")
 					bang:AdjustSpeed(10)  -- Adjust speed after the second message
 					wait(2)
 
-					sendMessage(￸"3")
+					sendMessage(￸"HOLYS󠀀󠀀H󠀀󠀀I󠀀󠀀T󠀀󠀀I󠀀󠀀'MB󠀀󠀀O󠀀󠀀UTTA󠀀C󠀀󠀀U󠀀󠀀󠀀M󠀀󠀀M󠀀󠀀󠀀!󠀀󠀀󠀀!󠀀󠀀")
 					bang:AdjustSpeed(13)  -- Adjust speed after the third message
 					wait(3)
 
-					sendMessage("4")
+					sendMessage("SWALLOW IT WELL..")
 					bang:AdjustSpeed(15)  -- Adjust speed after the fourth message
 					wait(2)
 
-					sendMessage("5")
+					sendMessage("AHH YESS..")
 					bang:AdjustSpeed(16)  -- Adjust speed after the fifth message
 					wait(3)
 
@@ -735,7 +735,7 @@ end
 
 					-- Set the animation speed to 0 after some time
 					bang:AdjustSpeed(0)
-					sendMessage("6")
+					sendMessage("C󠀀󠀀U󠀀󠀀M󠀀󠀀󠀀M󠀀󠀀E󠀀󠀀D󠀀󠀀󠀀AL󠀀󠀀OT")
 
 					wait(4)
 
