@@ -172,47 +172,47 @@ end)
 	-- Mouse click event for StartButton
 	StartButton.MouseButton1Click:Connect(function()
 		if targetExists() then
-local RunService = game:GetService("RunService")
-local speaker = game.Players.LocalPlayer
+			local RunService = game:GetService("RunService")
+			local speaker = game.Players.LocalPlayer
 
--- Initialize Clip status
-local Clip = false
-local Noclipping
+			-- Initialize Clip status
+			local Clip = false
+			local Noclipping
 
--- Function to start noclip
-local function startNoclip()
-    -- Ensure Clip is false and the character exists
-    if Clip == false and speaker.Character ~= nil then
-        -- Define the NoclipLoop function
-        local function NoclipLoop()
-            if Clip == false and speaker.Character ~= nil then
-                for _, child in pairs(speaker.Character:GetDescendants()) do
-                    if child:IsA("BasePart") and child.CanCollide == true and child.Name ~= "floatName" then
-                        child.CanCollide = false
-                    end
-                end
-            end
-        end
-        -- Connect the NoclipLoop to the Stepped event
-        Noclipping = RunService.Stepped:Connect(NoclipLoop)
-    end
-end
+			-- Function to start noclip
+			local function startNoclip()
+			    -- Ensure Clip is false and the character exists
+			    if Clip == false and speaker.Character ~= nil then
+ 			       -- Define the NoclipLoop function
+    			    local function NoclipLoop()
+ 			           if Clip == false and speaker.Character ~= nil then
+     			           for _, child in pairs(speaker.Character:GetDescendants()) do
+ 			                   if child:IsA("BasePart") and child.CanCollide == true and child.Name ~= "floatName" then
+    			                    child.CanCollide = false
+     			               end
+     			           end
+  			          end
+ 			       end
+      			  -- Connect the NoclipLoop to the Stepped event
+   			     Noclipping = RunService.Stepped:Connect(NoclipLoop)
+ 			   end
+			end
 
--- Function to stop noclip
-local function stopNoclip()
-    -- Disconnect the NoclipLoop from the Stepped event
-    if Noclipping then
-        Noclipping:Disconnect()
-    end
-    -- Restore CanCollide to true for all parts
-    if speaker.Character then
-        for _, child in pairs(speaker.Character:GetDescendants()) do
-            if child:IsA("BasePart") and child.Name ~= "floatName" then
-                child.CanCollide = true
-            end
-        end
-    end
-end
+			-- Function to stop noclip
+			local function stopNoclip()
+   			 -- Disconnect the NoclipLoop from the Stepped event
+			    if Noclipping then
+ 			       Noclipping:Disconnect()
+ 			   end
+  			  -- Restore CanCollide to true for all parts
+			    if speaker.Character then
+			        for _, child in pairs(speaker.Character:GetDescendants()) do
+  			          if child:IsA("BasePart") and child.Name ~= "floatName" then
+    			            child.CanCollide = true
+   			         end
+ 			       end
+ 			   end
+			end
 
 			print("The target exists " .. TextBox.Text)
 			local RunService = game:GetService("RunService")
@@ -221,7 +221,7 @@ end
 
 			-- Initial animation setup
 			local SpinAnim = Instance.new("Animation")
-			SpinAnim.AnimationId = "rbxassetid://188632011" -- Spin animation
+			SpinAnim.AnimationId = "rbxassetid://235542946" -- Spin animation
 
 			local player = game.Players.LocalPlayer
 			local humanoid = player.Character:FindFirstChildOfClass("Humanoid")
@@ -230,7 +230,7 @@ end
 			-- Function to play the spin animation
 			local function playSpinAnimation()
 				spinTrack.Looped = true
-				spinTrack:Play(.1, 1, 2)
+				spinTrack:Play(.1, 1, 5)
 			end
 
 			-- Function to stop the spin animation
@@ -297,11 +297,11 @@ end
 
 				-- Send messages with delays
 				wait(0.5)
-				sendMessage("🎯 Target acquisition in progress, meticulously scanning the coordinates for optimal precision.")
+				sendMessage("Target acquisition in progress, meticulously scanning the coordinates for optimal precision.")
 				wait(2)
-				sendMessage("🔍 Scanning the coordinates to pinpoint exact target location with utmost accuracy.")
+				sendMessage("Scanning the coordinates to pinpoint exact target location with utmost accuracy.")
 				wait(2)
-				sendMessage("🚀 Deploying... Engaging systems for swift and decisive action.")
+				sendMessage("Deploying... Engaging systems for swift and decisive action.")
 				wait(1)
 
 				startNoclip()
@@ -369,7 +369,7 @@ end
 				if success then
 					print("Starting...")
 				else
-					sendMessage("❌ First script encountered an error.", "All")
+					sendMessage("First script encountered an error.", "All")
 				end
 			end
 
@@ -562,7 +562,7 @@ end
 			end
 
 			local speaker = game.Players.LocalPlayer
-			local args = {0.7, TextBox.Text}  -- Example speed value and target username
+			local args = {0.85, TextBox.Text}  -- Example speed value and target username
 			flyCommand(args, speaker)
 
 			-- Check distance periodically to stop animation
@@ -633,8 +633,8 @@ end
 					local playerLeftConnection
 					playerLeftConnection = Players.PlayerRemoving:Connect(function(player)
 						if player == targetPlayer then
-							sendMessage("❌ Error: The targeted player has left the game.")
-							playerLeftConnectiosconnect()
+							sendMessage("Error: The targeted player has left the game.")
+							playerLeftConnection:Disconnect()
 							return
 						end
 					end)
@@ -684,11 +684,11 @@ end
 					bang:AdjustSpeed(7)  -- Adjust speed after the first message
 					wait(3)
 
-					sendMessage("O󠀀M󠀀GUS󠀀U󠀀C󠀀KL󠀀I󠀀K󠀀EAF󠀀U󠀀C󠀀K󠀀I󠀀NV󠀀A󠀀C󠀀U󠀀U󠀀M󠀀󠀀󠀀")
+					sendMessage("O󠀀M󠀀GUS󠀀U󠀀C󠀀KL󠀀I󠀀K󠀀EAF󠀀U󠀀C󠀀K󠀀I󠀀NV󠀀A󠀀C󠀀U󠀀U󠀀M")
 					bang:AdjustSpeed(10)  -- Adjust speed after the second message
 					wait(2)
 
-					sendMessage(￸"H󠀀O󠀀L󠀀YS󠀀H󠀀I󠀀TA󠀀MB󠀀O󠀀U󠀀T󠀀T󠀀AC󠀀U󠀀M󠀀M󠀀!󠀀!󠀀󠀀")
+					sendMessage("H󠀀O󠀀L󠀀YS󠀀H󠀀I󠀀TA󠀀MB󠀀O󠀀U󠀀T󠀀T󠀀AC󠀀U󠀀M󠀀M󠀀!󠀀!")
 					bang:AdjustSpeed(13)  -- Adjust speed after the third message
 					wait(3)
 
@@ -756,7 +756,7 @@ end
 
 				else
 					-- If no player was found with the specified username, display an error message
-					sendMessage("❌ Error: Target player not found.")
+					sendMessage("Error: Target player not found.")
 
 					local camera = workspace.CurrentCamera
 					camera.CameraSubject = Players.LocalPlayer.Character:FindFirstChild("Humanoid")
@@ -807,7 +807,7 @@ end
 
 			-- (Existing StartButton functionality here)
 		else
-			sendMessage("❌ Error: The target does not exist. Please type a new target.")
+			sendMessage("Error: The target does not exist. Please type a new target.")
 		end
 	end)
 end
