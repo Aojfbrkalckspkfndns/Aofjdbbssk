@@ -210,7 +210,7 @@ local function LIRMJQK_fake_script() -- Actions.LocalScript
 	local humanoidRootPart = character:WaitForChild("HumanoidRootPart")
 	local humanoid = character:WaitForChild("Humanoid")
 	
-	local animationId = "rbxassetid://55816634"
+	local animationId = "rbxassetid://72042024"
 	local sittingAnimationId = "rbxassetid://12345678"
 	local animation = Instance.new("Animation")
 	animation.AnimationId = animationId
